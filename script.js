@@ -1,4 +1,7 @@
-const data = window.MENU_DATA || [];
+const data = (window.MENU_DATA || []).map(group => ({
+  ...group,
+  items: [...group.items].sort((a, b) => Number(a[1]) - Number(b[1]))
+}));
 const grid = document.getElementById("menuGrid");
 const search = document.getElementById("search");
 const quickCats = document.getElementById("quickCats");
