@@ -1,6 +1,6 @@
-const SUPABASE_URL = "NEXT_PUBLIC_SUPABASE_URL=https://peyilmgpseriuyelbsde.supabase.co
-NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=sb_publishable_XR7zqZg1a9Ch-0axfdRwaw_ppOhJT65";
+const SUPABASE_URL = "https://peyilmgpseriuyelbsde.supabase.co";
 const SUPABASE_ANON_KEY = "sb_publishable_XR7zqZg1a9Ch-0axfdRwaw_ppOhJT65";
+
 
 const ready = !SUPABASE_URL.startsWith("PASTE_") && !SUPABASE_ANON_KEY.startsWith("PASTE_");
 const sb = ready ? window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY) : null;
