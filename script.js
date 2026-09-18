@@ -3,7 +3,7 @@ window.MENU_DATA = window.MENU_DATA || [];
 /* FoodCosta Menu + Cart + Online Orders */
 
 const SUPABASE_URL = "https://peyilmgpseriuyelbsde.supabase.co";
-const SUPABASE_ANON_KEY = "sb_publishable_XR7zqZg1a9Ch-0axfdRwaw_ppOhJT65";
+const SUPABASE_ANON_KEY = "sb_publishable_XR7zqZg1a9Ch-0axfdRwaw_ppOhJT65 ";
 
 function loadSupabase(){
   return new Promise((resolve,reject)=>{
